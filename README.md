@@ -45,17 +45,31 @@ https://mui.com/
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `pageSize` | `string` | **Opcional**. quantidade de produtos retornados |
-| `pageNumber` | `string` | **Opcional**. numero da pagina |
+| `pageNumber` | `string` | **Opcional**. número da pagina |
 | `search` | `string` | **Opcional**. nome do produto |
 
 
+
+## Rodar Api localmente
+
+caso possua o gerenciador de versão do node `nvm` necessário Node => v18
+
+```bash
+  nvm use && npm install && npm start
+```
+
+ou 
+
+```bash
+  npm install && npm start
+```
 ## Criterios de avaliação
 
 - Conhecimento Geral `React` (hooks, ciclo de vida, side effects, gerenciamento de estado, etc..)
 - Design
 - Acessibilidade
 - performance
-- Boas praticas de desenvolvimento
-- padroes de projetos
-- experiencia do usuario
+- Boas práticas de desenvolvimento
+- padrôes de projetos
+- experiência do usuário
 
