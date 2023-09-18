@@ -27,9 +27,6 @@ O objetivo é implementar uma listagem de produtos para pedido no qual será nec
 
 
 
-
-
-
 ## Design System
 
 https://www.figma.com/file/iJsu1HirhuyuEMvTLIE4xI/Material-UI-v.1-by-Fively-(Copy)?type=design&node-id=0-1&mode=design
@@ -49,7 +46,16 @@ https://mui.com/
 | :---------- | :--------- | :---------------------------------- |
 | `pageSize` | `string` | **Opcional**. quantidade de produtos retornados |
 | `pageNumber` | `string` | **Opcional**. numero da pagina |
+| `search` | `string` | **Opcional**. nome do produto |
 
 
+## Criterios de avaliação
 
+- Conhecimento Geral `React` (hooks, ciclo de vida, side effects, gerenciamento de estado, etc..)
+- Design
+- Acessibilidade
+- performance
+- Boas praticas de desenvolvimento
+- padroes de projetos
+- experiencia do usuario
 
