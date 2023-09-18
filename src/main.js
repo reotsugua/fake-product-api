@@ -15,9 +15,9 @@ function paginate(array, pageSize, pageNumber) {
 app.get("/products", async (req, res) => {
     let products = data
     const searchText = req.query.search?.toLocaleLowerCase()
-    const productsSearchResult = data.filter(product => searchText ? product?.name?.toLowerCase().includes(searchText) : product)
+    const resultProductSearch = data.filter(product => searchText ? product?.name?.toLowerCase().includes(searchText) : product)
     if (req.query?.pageSize || req.query?.pageNumber) {
-        products = paginate(productsSearchResult, req.query?.pageSize, req.query?.pageNumber)
+        products = paginate(resultProductSearch, req.query?.pageSize, req.query?.pageNumber)
     }
     setTimeout(() => res.json(products), products.length * 25)
 })
