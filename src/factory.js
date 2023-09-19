@@ -1,11 +1,13 @@
 import { faker } from "@faker-js/faker"
 import fs from "fs"
 import path from "path"
+import { randomUUID } from "crypto"
 
 const products = []
 
 Array.from({ length: 1000 }).forEach(() => {
     const product = {
+        id: randomUUID(),
         name: faker.commerce.productName(),
         avatar: faker.image.url(),
         description: faker.commerce.productDescription(),
